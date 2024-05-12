@@ -1,0 +1,24 @@
+FactEmployeePerformance: 
+
+ SELECT NON EMPTY { } ON COLUMNS, NON EMPTY { ([Fact Employee Performance].[Commission Pct].[Commission Pct].ALLMEMBERS * [Fact Employee Performance].[Current Total Sales].[Current Total Sales].ALLMEMBERS * [Fact Employee Performance].[Department ID].[Department ID].ALLMEMBERS * [Fact Employee Performance].[Fact Personel Sales ID].[Fact Personel Sales ID].ALLMEMBERS * [Fact Employee Performance].[Hire Date].[Hire Date].ALLMEMBERS * [Fact Employee Performance].[Name].[Name].ALLMEMBERS * [Fact Employee Performance].[Quota].[Quota].ALLMEMBERS * [Fact Employee Performance].[Sales Last Year].[Sales Last Year].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Project] CELL PROPERTIES VALUE
+
+
+FactEmployeeTraining:
+
+ SELECT { } ON COLUMNS, { ([Fact Employee Training].[Department Name].[Department Name].ALLMEMBERS * [Fact Employee Training].[Training Category].[Training Category].ALLMEMBERS * [Fact Employee Training].[Training Duration].[Training Duration].ALLMEMBERS * [Fact Employee Training].[Training ID].[Training ID].ALLMEMBERS * [Fact Employee Training].[Training Location].[Training Location].ALLMEMBERS * [Fact Employee Training].[Training Name].[Training Name].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Project] CELL PROPERTIES VALUE
+
+
+FactInternetSales:
+
+ SELECT { } ON COLUMNS, { ([Fact Internet Sales].[Address ID].[Address ID].ALLMEMBERS * [Fact Internet Sales].[Customer ID].[Customer ID].ALLMEMBERS * [Fact Internet Sales].[List Price].[List Price].ALLMEMBERS * [Fact Internet Sales].[Product Category].[Product Category].ALLMEMBERS * [Fact Internet Sales].[Product Name].[Product Name].ALLMEMBERS * [Fact Internet Sales].[Product Sub Category].[Product Sub Category].ALLMEMBERS * [Fact Internet Sales].[Sales Order ID].[Sales Order ID].ALLMEMBERS * [Fact Internet Sales].[Total Due].[Total Due].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Project] CELL PROPERTIES VALUE
+
+
+FactManPower:
+
+
+ SELECT { } ON COLUMNS, { ([Fact Man Power].[Department Name].[Department Name].ALLMEMBERS * [Fact Man Power].[Fact Man Power ID].[Fact Man Power ID].ALLMEMBERS * [Fact Man Power].[Job Title].[Job Title].ALLMEMBERS * [Fact Man Power].[Manager Name].[Manager Name].ALLMEMBERS * [Fact Man Power].[Number Of Employees].[Number Of Employees].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Project] CELL PROPERTIES VALUE
+
+
+FactManagerSales:
+
+ SELECT { } ON COLUMNS, { ([Fact Manager Sales].[Department ID].[Department ID].ALLMEMBERS * [Fact Manager Sales].[Hire Date].[Hire Date].ALLMEMBERS * [Fact Manager Sales].[Job Title].[Job Title].ALLMEMBERS * [Fact Manager Sales].[Manager ID].[Manager ID].ALLMEMBERS * [Fact Manager Sales].[Manager Name].[Manager Name].ALLMEMBERS * [Fact Manager Sales].[Quota].[Quota].ALLMEMBERS * [Fact Manager Sales].[Total Sales].[Total Sales].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Project] CELL PROPERTIES VALUE
